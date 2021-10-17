@@ -15,7 +15,7 @@ jobs:
       - name: Create a release
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: "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"
           prerelease: false
           automatic_release_tag: "Tiyas"
 
@@ -62,7 +62,7 @@ jobs:
       - name: Publish release
         run: /bin/bash -c "source $GITHUB_WORKSPACE/contrib/github-actions/release-linux-binary.sh"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: "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"
           RELEASE_NAME: "Tiyas"
 
   macos:
@@ -110,7 +110,7 @@ jobs:
       - name: Publish release
         run: /bin/bash -c "source $GITHUB_WORKSPACE/contrib/github-actions/release-macos-package.sh"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: "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"
           RELEASE_NAME: "Tiyas"
 
   windows:
@@ -151,5 +151,5 @@ jobs:
       - name: Publish release
         run: /bin/bash -c "source $GITHUB_WORKSPACE/contrib/github-actions/release-windows-package.sh"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: "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"
           RELEASE_NAME: "Tiyas"
